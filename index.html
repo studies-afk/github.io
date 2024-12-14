@@ -17,7 +17,33 @@
             height: 40px; /* i wysokość są równe */
             border-radius: 50%;
             object-fit: cover; /* Dopasowanie obrazu do kontenera */
-}
+	}
+	.container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Wyśrodkowanie formularza */
+            justify-content: center;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #242526;
+            border-radius: 8px;
+            max-width: 400px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .container input[type="password"],
+        .container button {
+            width: 100%; /* Równa szerokość dla pól */
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .container button {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
         .navbar {
             display: flex;
             align-items: center;

